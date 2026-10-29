@@ -1,0 +1,65 @@
+/* all common css start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  text-transform: 0.4s;
+}
+
+.container {
+  width: 1170px;
+  height: 83px;
+  margin: 0 auto;
+}
+/* all common css end */
+
+/* header section star */
+#headerPart {
+  padding: 33px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menubar,
+ul,
+li,
+a {
+  display: flex;
+  gap: 50px;
+  color: #181818;
+  font-width: 500;
+  font-size: 18px;
+}
+.menubar li:first-child a {
+  color: #5956e8;
+}
+
+a:hover {
+  color: #5956e8;
+  font-width: 500;
+  font-size: 18px;
+  line-height: auto;
+  transition: 0.5s;
+}
+
+.button a {
+  background-color: #5956e8;
+  color: white;
+  padding: 13px 24px;
+  font-width: 500;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* header section end */
