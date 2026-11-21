@@ -1,0 +1,550 @@
+/* all common css start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  text-transform: 0.4s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* all common css end */
+
+/* header section star */
+#headerPart {
+  padding: 33px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menubar,
+ul,
+li,
+a {
+  display: flex;
+  gap: 50px;
+  color: #181818;
+  font-width: 500;
+  font-size: 18px;
+}
+
+.menubar a:hover {
+  color: #5956e8;
+  font-width: 500;
+  font-size: 18px;
+  line-height: auto;
+  transition: 0.5s;
+}
+
+.button a {
+  background-color: #5956e8;
+  color: white;
+  padding: 13px 24px;
+  font-width: 500;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* header section end */
+
+/* banner section start  */
+
+#bannerPart {
+  background-color: #5956e8;
+  padding: 183px 0;
+}
+.bannerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bannerText h1 {
+  width: 501px;
+  font-size: 65px;
+  line-height: 80px;
+  font-weight: 700;
+  color: #fffefe;
+}
+.bannerText p {
+  width: 542px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  text-transform: none;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.bannerBtn a {
+  padding: 13px 22px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 144px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #5956e8;
+}
+
+/* banner section end */
+
+/* card section start */
+
+.servieceText {
+  text-align: center;
+}
+
+.servieceText h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  margin-top: 100px;
+}
+
+.servieceText p {
+  font-weight: 400px;
+  line-height: 27px;
+  width: 542px;
+  height: 54px;
+  text-transform: none;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.servieceCard {
+  width: 32%;
+  border: 1px solid #e3e3e3;
+  padding: 63px 48px;
+  margin: 50px 0;
+  border-radius: 10px;
+}
+.servieceCard:hover {
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+.servieceCard:hover .cardImg svg path {
+  fill: #5956e8;
+  stroke: rgb(255, 255, 255);
+}
+.servieceCard p {
+  width: 274px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: none;
+  color: #181818b2;
+}
+.servieceCard h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.servieceFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.secondCl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondCl .servieceCard {
+  margin: 30px 0;
+  width: 32%;
+}
+
+/* card section end  */
+
+/* portfollio part start  */
+
+.pText {
+  text-align: center;
+}
+
+.pText h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.pText p {
+  line-height: 27px;
+  font-weight: 400;
+  text-transform: none;
+  margin: 0 auto;
+  width: 542px;
+  height: 54px;
+}
+
+.pImg,
+.pImgg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.pImg {
+  margin: 50px 0 30px;
+}
+
+.pImgg {
+  margin: 0 0 30px;
+}
+
+.pItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pItem > img {
+  width: 100%;
+  display: block;
+}
+
+.pHover {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 19px;
+  padding: 25px 24px;
+  background-color: #5956e8;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s;
+}
+
+.pItem:hover .pHover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pHover h6 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.pHover p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+/* portfollio part end  */
+
+/* team member section start */
+.tPart {
+  text-align: center;
+}
+.tPart h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  margin-top: 100px;
+}
+.tPart p {
+  font-weight: 400px;
+  line-height: 27px;
+  width: 542px;
+  height: 54px;
+  text-transform: none;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#tSec .img {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+#tSec .img img {
+  width: 100%;
+  min-width: 0;
+}
+/* team member section end */
+
+/* experiance section start */
+
+.eText h2 {
+  width: 603px;
+  line-height: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 142px;
+  margin-bottom: 20px;
+}
+
+.eText p {
+  text-transform: none;
+  width: 542px;
+  height: 54px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.eCard {
+  background-color: #ffffff;
+  width: 370px;
+  /* height: 425px; */
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  margin-top: 50px;
+}
+.cardImg1 {
+  margin: 48px 0 30px 48px;
+}
+.cardImg2 {
+  margin-left: 48px;
+  margin-bottom: 20px;
+}
+.eCard p {
+  /* margin-left: 48px;
+  margin-bottom: 15px; */
+  margin: 0px auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #181818b2;
+  width: 274px;
+}
+.eCard h3 {
+  font-weight: 600;
+  margin-left: 48px;
+  font-size: 20px;
+}
+.eCard h5 {
+  margin-left: 48px;
+  font-weight: 400;
+  color: #5d5d5d;
+}
+
+.eCard #corner {
+  margin-left: 276px;
+}
+.eCard:hover {
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+.eFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* experiance section end */
+
+/* news section start */
+
+#nSec {
+  padding-bottom: 100px;
+}
+
+.nText {
+  text-align: center;
+}
+
+.nText h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  margin-top: 100px;
+}
+
+.nText p {
+  font-weight: 400;
+  line-height: 27px;
+  width: 542px;
+  text-transform: none;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.nFlex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.nCard {
+  width: 370px;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 18px 18px 30px;
+}
+
+.nCard:hover {
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+.nImg img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.nBody {
+  padding: 0 17px;
+}
+
+.nMeta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.nMeta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #181818b2;
+}
+
+.nMeta svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: #181818b2;
+  stroke-width: 2;
+}
+
+.nCard h4 {
+  width: 250px;
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #181818;
+}
+
+.nCard p {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+  color: #181818b2;
+}
+
+.nCard a {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5956e8;
+}
+
+/* news section end */
+
+/* footer section start */
+
+#footerPart {
+  background-color: #eeedfc;
+  padding: 100px 0;
+}
+
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fAbout {
+  width: 292px;
+}
+
+.fAbout p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+  color: #181818b2;
+}
+
+.fSocial {
+  display: flex;
+  gap: 15px;
+  margin-top: 24px;
+}
+
+.fSocial a {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.fSocial svg {
+  width: 18px;
+  height: 18px;
+}
+
+.fCol h5 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #181818;
+}
+
+.fCol ul {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fCol li {
+  display: block;
+}
+
+.fCol a,
+.fCol p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #181818b2;
+}
+
+.fCol p {
+  text-transform: none;
+  line-height: 25px;
+}
+
+/* footer section end */
